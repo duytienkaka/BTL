@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/humburger_pay.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container payment-form">
+        <div class="row">
+            <div class="col-md-6 product-details">
+                <h4>Chi tiết sản phẩm</h4>
+                <img src = "images/menu-3.jpg" style = "width: 200px; height: 200px;object-fit: contain;">
+                <div class="form-group">
+                    <label for="productName">Tên sản phẩm:</label>
+                    <input type="text" class="form-control" id="productName" value="Bánh Tráng Nướng" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="productPrice">Giá:</label>
+                    <input type="text" class="form-control" id="productPrice" value="12.99" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="productQuantity">Số lượng:</label>
+                    <div class="input-group">
+                        <input type="number" class="form-control text-center" id="productQuantity" value="1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="totalPrice">Tổng cộng:</label>
+                    <input type="text" class="form-control" id="totalPrice" value="" readonly>
+                </div>
+            </div>
+            <!-- Shipping Information Section -->
+            <div class="col-md-6 shipping-info">
+                <h4>Thông tin nhận hàng</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="fullName">Họ và tên:</label>
+                        <input type="text" class="form-control" id="fullName" placeholder="Nhập họ và tên">
+                    </div>
+                    <div class="form-group">
+                        <label for="phoneNumber">Số điện thoại:</label>
+                        <input type="tel" class="form-control" id="phoneNumber" placeholder="Nhập số điện thoại">
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Vị trí nhận hàng:</label>
+                        <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ">
+                    </div>
+                    <div class="container-pay">
+                        <div class="left-side">
+                         <div class="card">
+                          <div class="card-line"></div>
+                          <div class="buttons"></div>
+                         </div>
+                         <div class="post">
+                          <div class="post-line"></div>
+                          <div class="screen">
+                           <div class="dollar">$</div>
+                          </div>
+                          <div class="numbers"></div>
+                          <div class="numbers-line2"></div>
+                         </div>
+                        </div>
+                        <div class="right-side">
+                         <div class="new">Thanh toán ngay</div>
+                          <svg viewBox="0 0 451.846 451.847" height="512" width="512" xmlns="http://www.w3.org/2000/svg" class="arrow"><path fill="#cfcfcf" data-old_color="#000000" class="active-path" data-original="#000000" d="M345.441 248.292L151.154 442.573c-12.359 12.365-32.397 12.365-44.75 0-12.354-12.354-12.354-32.391 0-44.744L278.318 225.92 106.409 54.017c-12.354-12.359-12.354-32.394 0-44.748 12.354-12.359 32.391-12.359 44.75 0l194.287 194.284c6.177 6.18 9.262 14.271 9.262 22.366 0 8.099-3.091 16.196-9.267 22.373z"></path></svg>
+                        </div>
+                       </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/pay.js"></script>
+</body>
+</html>

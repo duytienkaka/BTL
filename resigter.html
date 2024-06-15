@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href= "css/resigter.css">
+    <title>Đăng ký</title>
+</head>
+<body>
+    <form class="form_container">
+        <div class="logo_container"></div>
+        <div class="title_container">
+          <p class="title">Register to your Account</p>
+          <span class="subtitle">Đăng ký tài khoản để nhận được những thông báo mới nhất của chúng tôi.</span>
+        </div>
+        <br>
+        <div class="input_container">
+          <label class="input_label" for="email_field"><i class="fas fa-user"></i> Full Name</label>
+          <input placeholder="Họ Và Tên" title="Inpit title" name="input-name" type="email" class="input_field" id="fullname_field">
+          <p id = "hidden-title-email" style = "display: none;"></p>
+        </div>
+        <div class="input_container">
+          <label class="input_label" for="email_field"><i class="fas fa-user"></i> User Name</label>
+          <input placeholder="UserName" title="Inpit title" name="input-name" type="email" class="input_field" id="username_field">
+          <p id = "hidden-title-email" style = "display: none;"></p>
+        </div>
+        <div class="input_container">
+          <label class="input_label" for="email_field"><i class="fas fa-user"></i> Email</label>
+          <input placeholder="name@mail.com" title="Inpit title" name="input-name" type="email" class="input_field" id="email_field">
+          <p id = "hidden-title-email" style = "display: none;"></p>
+        </div>
+        <div class="input_container">
+          <label class="input_label" for="password_field"><i class="fas fa-lock"></i> Password</label>
+          <input placeholder="Password" title="Inpit title" name="input-name" type="password" class="input_field" id="password_field">
+          <p id = "hidden-title-password" style = "display: none;"></p>
+        </div>
+        <div class="input_container">
+            <label class="input_label" for="password_field-retype"><i class="fas fa-lock"></i> Retype Password</label>
+            <input placeholder="Password Retype" title="Inpit title" name="input-name" type="password" class="input_field" id="password_field-retype">
+            <p id = "hidden-title-password-retype" style = "display: none;"></p>
+          </div>
+        <button onclick = "kt()" title="Sign In" type="button" class="sign-in_btn">
+          <span>Create Account</span>
+        </button>
+        <p class="note">Chuỗi nhà hàng được anh Duy Tiến đầu tư và phát triển</p>
+      </form>
+      <div class="show-content">
+        <img src = "/images/lo_re.jpg">
+        <p class="content">Chào mừng bạn đến với shop đồ ăn vặt của chúng tôi! Tại đây, chúng tôi tự hào mang đến cho bạn những món ăn ngon tuyệt như hamburger nóng hổi, thịt bò nướng thơm lừng và pizza giòn tan với phô mai tan chảy. Mỗi món ăn đều được chế biến từ nguyên liệu tươi ngon và chất lượng, đảm bảo mang đến trải nghiệm ẩm thực tuyệt vời. Hãy ghé thăm shop chúng tôi để thưởng thức những món ăn vặt hấp dẫn, phục vụ nhanh chóng và thân thiện!</p>
+      </div>
+      </footer>
+      <script src="js/resigter.js"></script>
+</body>
+</html>

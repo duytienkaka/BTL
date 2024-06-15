@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết sản phẩm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="css/chi_tiet.css">
+</head>
+<body>
+    <header>
+        <section class="flex">
+          <a href="index.html" class="logo"><img src = "images/Symbol2.png" style = "width:50px; height:auto;"> PizBurg</a>
+  
+          <nav class="navbar">
+            <a class="active" href="index.html">home</a>
+            <a href="index.html/#dishes">Món ăn</a>
+            <a href="index.html/#about">về chúng tôi</a>
+            <a href="index.html/#menu">thực đơn</a>
+            <a href="index.html/#menu">tổng quan</a>
+            <a href="index.html/#order">đặt hàng</a>
+          </nav>
+  
+          <div class="icons">
+            <i class="fas fa-bars" id="menu-bars"></i>
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="login.html" class="fas fa-user"></a>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+          </div>
+        </section>
+      </header>
+  
+      <form action="" id="search-form">
+        <input
+          type="search"
+          placeholder="search here..."
+          name=""
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+      </form>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="product-image">
+                    <img id="mainImage" src="images/dish-2.png" class="img-fluid" alt="Main Image">
+                </div>
+                <div class="product-thumbnails mt-3">
+                    <img src="images/dish-2-1.png" class="img-thumbnail" alt="Thumbnail 1">
+                    <img src="images/dish-2-2.png" class="img-thumbnail" alt="Thumbnail 2">
+                    <img src="images/dish-2-3.png" class="img-thumbnail" alt="Thumbnail 3">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="product-info">
+                    <h2 class="product-name">Cánh Gà Chiên</h2>
+                    <p class="product-description">Thưởng thức món cánh gà chiên giòn rụm, thơm phức với lớp vỏ ngoài giòn tan và thịt gà mềm mịn. Tẩm ướp gia vị đậm đà, đây là món ăn lý tưởng cho mọi dịp.
+                    </p>
+                    <p class="product-price">Giá: $15.99</p>
+                    <div class="product-actions">
+                        <button class="btn btn-primary btn-buy">Mua ngay</button>
+                        <button class="btn btn-success btn-add-to-cart fas fa-shopping-cart"> Add to Cart</button>
+                        <a href = "index.html">Quay lại trang chủ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        var originalSrc = $('#mainImage').attr('src');
+        $('.img-thumbnail').hover(function(){
+            var newSrc = $(this).attr('src');
+            $('#mainImage').attr('src', newSrc);
+        }, function(){
+            $('#mainImage').attr('src', originalSrc);
+        });
+    });
+    </script>
+    <script src = "js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href= "css/login.css">
+    <title>Đăng nhập</title>
+</head>
+<body>
+    <form class="form_container">
+        <div class="logo_container"></div>
+        <div class="title_container">
+          <p class="title">Login to your Account</p>
+          <span class="subtitle">Hãy đăng nhập và bắt đầu tìm kiểm những món ăn yêu thích của bạn nào.</span>
+        </div>
+        <br>
+        <div class="input_container">
+          <label class="input_label" for="email_field"><i class="fas fa-user"></i> Email</label>
+          <input placeholder="name@mail.com" title="Inpit title" name="input-name" type="email" class="input_field" id="email_field">
+          <p id = "hidden-title-email" style = "display: none;"></p>
+        </div>
+        <div class="input_container">
+          <label class="input_label" for="password_field"><i class="fas fa-lock"></i> Password</label>
+          <input placeholder="Password" title="Inpit title" name="input-name" type="password" class="input_field" id="password_field">
+          <p id = "hidden-title-password" style = "display: none;"></p>
+        </div>
+        <button onclick = "kt()" title="Sign In" type="button" class="sign-in_btn">
+          <span>Sign In</span>
+        </button>
+        <button type = "reset" style = "width:100%; height: 40px; background-color: rgba(162, 162, 255, 0.86); border-radius: 10px;">Hủy</button>
+        <div class="re-pas">
+          <a href = "/forgot_pass.html">Forgot Password?</a>
+          <a href = "/resigter.html">Create an account</a>
+        </div>
+        <div class="separator">
+          <hr class="line">
+          <span>Or</span>
+          <hr class="line">
+        </div>
+        <button title="Sign In" type="submit" class="sign-in_ggl">
+          <span><i class="fab fa-google"></i> Sign In with Google</span>
+        </button>
+        <button title="Sign In" type="submit" class="sign-in_apl">
+          <span><i class="fab fa-apple"></i> Sign In with Apple</span>
+        </button>
+        <p class="note">Chuỗi nhà hàng được anh Duy Tiến đầu tư và phát triển</p>
+      </form>
+      <div class="show-content">
+        <img src = "/images/lo_re.jpg">
+        <p class="content">Chào mừng bạn đến với shop đồ ăn vặt của chúng tôi! Tại đây, chúng tôi tự hào mang đến cho bạn những món ăn ngon tuyệt như hamburger nóng hổi, thịt bò nướng thơm lừng và pizza giòn tan với phô mai tan chảy. Mỗi món ăn đều được chế biến từ nguyên liệu tươi ngon và chất lượng, đảm bảo mang đến trải nghiệm ẩm thực tuyệt vời. Hãy ghé thăm shop chúng tôi để thưởng thức những món ăn vặt hấp dẫn, phục vụ nhanh chóng và thân thiện!</p>
+      </div>
+      </footer>
+    <script src="js/login.js"></script>
+</body>
+</html>

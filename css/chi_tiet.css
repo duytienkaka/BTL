@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:#27ae60;
+    --black:#192a56;
+    --light-color:#666;
+    --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+    cursor: pointer;
+}
+
+section{
+    padding:4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container:nth-child(even){
+    background:#eee;
+}
+
+.sub-heading{
+    text-align: center;
+    color:var(--green);
+    font-size: 2rem;
+}
+
+.heading{
+    text-align: center;
+    color:var(--black);
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--black);
+    border-radius: .5rem;
+    cursor: pointer;
+    padding:.8rem 3rem;
+}
+
+
+header{
+    top:0; left: 0; right:0;
+    background: #e6f8c1;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+    margin-bottom: 50px;
+}
+
+header .flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+header .flex .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .flex .logo i{
+    color:var(--green);
+}
+
+header .flex .navbar a{
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    color:var(--light-color);
+}
+
+header .flex .navbar a.active,
+header .flex .navbar a:hover{
+    color:#fff;
+    background: var(--green);
+}
+
+header .flex .icons i,
+header .flex .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+
+header .flex .icons i:hover,
+header .flex .icons a:hover{
+    color:#fff;
+    background: var(--green);
+    transform: rotate(360deg);
+}
+
+header .flex .icons #menu-bars{
+    display: none;
+}
+
+#search-form{
+    position: fixed;
+    top:-110%; left:0; 
+    height:100%; width:100%;
+    z-index: 1004;
+    background:rgba(0,0,0,.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 1rem;
+}
+
+#search-form.active{
+    top:0;
+}
+
+#search-form #search-box{
+    width:50rem;
+    border-bottom: .1rem solid #fff;
+    padding:1rem 0;
+    color:#fff;
+    font-size: 3rem;
+    text-transform: none;
+    background:none;
+}
+
+#search-form #search-box::placeholder{
+    color:#eee;
+}
+
+#search-form #search-box::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+
+#search-form label{
+    color:#fff;
+    cursor:pointer;
+    font-size: 3rem;
+}
+
+#search-form label:hover{
+    color:var(--green);
+}
+
+#search-form #close{
+    position: absolute;
+    color:#fff;
+    cursor: pointer;
+    top: 2rem; right:3rem;
+    font-size: 5rem;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+.col-md-6{
+    width: 50%; 
+}
+.product-image{
+    width: 250px;
+    height: 200px;
+    margin-bottom: 1rem;
+    margin-left: 20%;
+}
+.product-thumbnails img {
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    object-fit: contain;
+}
+
+.product-thumbnails img:hover {
+    border-color: #007bff;
+}
+
+.product-name {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+.product-price {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.product-actions {
+    margin-top: 20px;
+}
+.product-actions a{
+    display:block;
+    margin-top: 10px;
+    font-size: 18px;
+    color: #005cac;
+    text-decoration: none;
+}
+.product-actions a:hover{
+    color: #007bff;
+    text-decoration: none;
+}
+.btn-buy {
+    margin-right: 10px;
+}
+/* Add this CSS to your existing chi_tiet.css file */
+
+@media (max-width: 767px) {
+    #menu-bars{
+        display: block;
+    }
+    .navbar{
+        display: none;
+    }
+    .container {
+        padding: 15px;
+    }
+    .product-image,
+    .product-info {
+        text-align: center;
+    }
+    .product-thumbnails {
+        text-align: center;
+    }
+    .product-thumbnails .img-thumbnail {
+        display: inline-block;
+        margin: 5px;
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+    .product-actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-actions .btn {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+}
